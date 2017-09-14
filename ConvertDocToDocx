@@ -1,0 +1,12 @@
+import sys
+import subprocess
+import os
+
+print(os.getcwd());
+filename=input();
+#for filename in os.listdir(os.getcwd()):
+#print(filename);
+if filename.endswith('.doc'):
+        print("vishwas");
+        print(filename);
+        subprocess.call(['soffice', '--headless', '--convert-to', 'docx', filename])
